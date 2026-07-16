@@ -1,0 +1,23 @@
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+
+# Cache
+.cache/
+
+# Node
+node_modules/
+
+# Generated packages
+*.mcpack
+*.mcaddon
+*.zip
