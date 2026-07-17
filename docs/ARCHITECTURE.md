@@ -1,10 +1,19 @@
 # EmpireCraft Architecture
 
-## Overview
+**Version:** Alpha 0.1.0
 
-EmpireCraft is built using independent gameplay systems.
+**Status:** Active
 
-Each system has one responsibility and communicates with other systems only when necessary.
+**Last Updated:** July 2026
+
+---
+
+## Purpose
+
+This document defines the high-level software architecture of EmpireCraft.
+
+It describes the major gameplay systems, their responsibilities, and how they interact. It is intended to guide future development and keep the project modular, maintainable, and scalable.
+
 
 ---
 
@@ -16,10 +25,11 @@ Responsibilities
 
 - Health
 - Mana
-- XP
+- Experience (XP)
 - Levels
 - Classes
 - Statistics
+- Inventory Data
 
 ---
 
@@ -32,19 +42,20 @@ Responsibilities
 - Structures
 - Dungeons
 - Biomes
-
+- Points of Interest
 ---
 
 ### Magic System
 
 Responsibilities
 
-- Spellbook
 - Mana
+- Spellbook
+- Magic Classes
 - Spells
+- Elemental Magic
 - Magic Effects
 - Cooldowns
-
 ---
 
 ### Weapon System
@@ -52,9 +63,11 @@ Responsibilities
 Responsibilities
 
 - Weapons
+- Legendary Weapons
 - Armor
 - Accessories
-- Upgrades
+- Weapon Upgrades
+- Equipment Balance
 
 ---
 
@@ -64,8 +77,9 @@ Responsibilities
 
 - Boss AI
 - Boss Arenas
+- Boss Progression
 - Boss Rewards
-- Relics
+- Legendary Relics
 
 ---
 
@@ -77,6 +91,7 @@ Responsibilities
 - Shops
 - Trading
 - Marketplace
+- Item Value
 
 ---
 
@@ -84,10 +99,11 @@ Responsibilities
 
 Responsibilities
 
-- Reputation
+- Kingdom Reputation
 - Kingdom Control
 - Guards
 - Castle Progression
+- Factions
 
 ---
 
@@ -100,23 +116,60 @@ Responsibilities
 - NPC Dialogue
 - Achievements
 
+  
 ---
 
 ### UI System
 
 Responsibilities
 
+- HUD
 - Menus
 - Notifications
-- HUD
 - Boss Bars
-
+- Quest Tracker
+  
 ---
+
+## Design Goals
+
+- Modular systems
+- Reusable components
+- Easy maintenance
+- Mobile-first optimization
+- Scalable architecture
 
 ## Design Principles
 
 - One responsibility per system.
-- Keep systems modular.
-- Avoid duplicate code.
-- Optimize for Minecraft Bedrock.
-- Optimize for mobile performance.
+- Keep systems modular and loosely coupled.
+- Avoid duplicate code and duplicated data.
+- Prefer reusable components.
+- Optimize for Minecraft Bedrock Edition.
+- Prioritize mobile performance.
+- Build features incrementally with testing.
+- Document architectural changes before implementation.
+
+## System Dependencies
+
+The gameplay systems are designed to remain independent whenever possible.
+
+Player System
+├── uses Magic System
+├── uses Weapon System
+├── progresses through Quest System
+└── earns rewards from Economy System
+
+Quest System
+├── unlocks Boss System
+├── rewards Economy System
+└── influences Empire System
+
+Boss System
+├── awards Legendary Weapons
+├── grants Economy rewards
+└── advances Quest progression
+
+Empire System
+├── affects World System
+└── influences Quest System
