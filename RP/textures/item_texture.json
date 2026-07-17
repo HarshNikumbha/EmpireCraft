@@ -1,0 +1,9 @@
+{
+  "resource_pack_name": "EmpireCraft RP",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "empire_coin": {
+      "textures": "textures/items/empire_coin"
+    }
+  }
+}

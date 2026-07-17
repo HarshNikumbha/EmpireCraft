@@ -1,0 +1,42 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Harsh Nikumbha"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			120
+		],
+		"uuid": "68483939-36e1-410a-b687-b1d5498766c7",
+		"version": [
+			0,
+			1,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "95917b01-70fa-4939-9aea-8485bc087112",
+			"version": [
+				0   ,
+				1,
+				0
+			]
+		}
+	]
+}
