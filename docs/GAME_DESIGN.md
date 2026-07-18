@@ -73,3 +73,31 @@ EmpireCraft is built around these principles:
 3. Every boss should feel unique.
 4. Legendary items should feel truly legendary.
 5. Performance is a priority, especially on mobile devices.
+
+## Early Game Loop
+
+Spawn
+
+↓
+
+Meet Empire Guide
+
+↓
+
+Receive Empire Coin
+
+↓
+
+Visit Marketplace
+
+↓
+
+Accept First Quest
+
+↓
+
+Explore Imperial Kingdom
+
+↓
+
+Unlock the World
