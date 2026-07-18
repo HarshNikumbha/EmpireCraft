@@ -3,7 +3,7 @@
   "texture_name": "atlas.items",
   "texture_data": {
     "empire_coin": {
-      "textures": "textures/items/empire_coin"
+      "textures": "textures/items/currency/empire_coin"
     }
   }
 }
