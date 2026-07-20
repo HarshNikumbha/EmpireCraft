@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "empirecraft:empire_guide",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entities/empire_guide"
+      },
+      "geometry": {
+        "default": "geometry.humanoid"
+      },
+      "render_controllers": [
+        "controller.render.empire_guide"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg"
+      }
+    }
+  }
+}

@@ -2,6 +2,22 @@
 
 ## Empire Guide
 
+## Status
+
+- [ ] Skin
+- [ ] Client Entity
+- [ ] Behavior Entity
+- [ ] Spawnable
+- [ ] Dialogue
+- [ ] Quest
+- [ ] Trading
+
+## Purpose
+
+The Empire Guide is the first NPC the player meets.
+
+He introduces EmpireCraft and starts the player's journey.
+
 ### Name
 
 Empire Guide
